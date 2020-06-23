@@ -12,6 +12,9 @@ with open('README.md', encoding='utf8') as file:
 setup(
     name='pong',
     version=pong.__version__,
+    author=pong.__author__,
+    author_email='james@taran.biz',
+    url='https://github.com/jlaguma/pong',
     packages=['pong'],
     package_data={},
     install_requires=['click'],
@@ -19,8 +22,5 @@ setup(
     description='Pong Game',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    author=pong.__author__,
-    author_email='james@taran.biz',
-    url='https://www.linkedin.com/in/jlaguma/',
     entry_points={'console_scripts': ['pong = pong.__main__:main']},
 )
